@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revisão</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            font-family: 'Times New Roman', 15pt, Times, serif;
+            color: black;
+
+        }
+    </style>
+</head>
+<body>
+    <img src="https://i.pinimg.com/236x/69/1a/85/691a857f038bc8a7714e3cf615dc0048.jpg" alt="">
+    <script>
+        let nome = window.prompt ('Qual o seu nome?')
+        let profissão =  prompt (`Olá, ${nome}! Qual é a sua profissão na firma?`)
+        profissão = profissão.toUpperCase().trim()
+        if ( profissão == 'MAGO') {
+            document.write (`${nome.toUpperCase()}!!!! OOOOOOOOOOOOOOOO MAGO É IMPLACÁVEL!!!!!!!!! `)
+        
+        } else if (profissão == 'ARQUEIRO') {
+            document.write (`${nome.toLowerCase()} o arqueiro.... legaaaaal, mas mago é melhor `)
+        } else {
+            document.write (`Responda com 'mago' ou 'arqueiro'`)
+        }
+    
+    </script>
+</body>
+</html>

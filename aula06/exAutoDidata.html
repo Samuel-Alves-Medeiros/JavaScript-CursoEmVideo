@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exAutoDidata</title>
+    <style>
+        body {
+            font: normal 25pt arial;
+        }
+    </style>
+    <button>
+      meu botão
+    </button>
+</head>
+<body>
+    <script>
+        var n1 = parseInt(window.prompt('Digite um número'))
+        var n2 = parseInt(window.prompt('Digite outro número'))
+        var s = n1 + n2
+        window.alert (`A soma do ${n1} + ${n2} é igual a ${s}`)
+    
+
+  /*
+       var gosto = window.confirm ('você gosta de pipoca?')
+        if (gosto == true) {
+            document.write (':D')
+
+        } else {
+            document.write (':O')
+        } */
+      // -------------------------------------------------------------------------------------------------------------
+      /*
+       var nome = window.prompt ('Qual é o seu nome?')
+      var cargo = window.prompt ('Qual é o seu cargo na empresa?') 
+      cargo = cargo.toLowerCase().trim() // .trim() --> tira os espaços na string 
+      //Converter tudo para letras minúsculas e tirar os espaços é um bom metódo para padronizar as entradas no 'prompt ()'
+
+      if (cargo == 'estagiário') {
+        //document.write (`${nome}, Seu salário é <strong>R$902,36</strong>`)
+      } else if (cargo == 'desenvolvedor') {
+        //document.write (`${nome}, Seu salário é de <strong>R$1646,67</strong>`)
+      } else if (cargo == 'gerente') {
+        //document.write (`${nome}, Seu salário é <strong>R$2654,45</strong>`)
+      } else {
+       // document.write ('Seu cargo não consta no sistema, digite um cargo entre: "estagiário", "desenvolvedor" e "gerente" ')
+      }
+//------------------------------------------------------------------------------------------------------------------------
+ /*var nome = window.prompt ('qual o seu nome?')
+        var salario = Number.parseFloat(window.prompt ('qual é o seu salário? somente números e ponto'))
+        var salario = salario.toLocaleString ('pt-BR',{style:'currency',currency: 'BRL'})
+        alert (`Olá, ${nome}! Seu salário é ${salario}`)*/
+
+        //document.write (`Olá, <strong>${nome} </strong>! Seu nome tem ${nome.length} letras </br>`)
+        //document.write (` Seu nome em caixa alta é <strong>${nome.toUpperCase()}</strong> </br>`)
+        //document.write (`Seu nome em caixa baixa é ${nome.toLowerCase ()}`)
+    </script>
+</body>
+</html>

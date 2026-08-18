@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area {
+           background-color: rgb(114, 204, 152); 
+           font: normal 15pt Arial;
+           color: white;
+           width: 200px;
+           height: 200px;
+           line-height: 200px;
+           text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" >
+        clique em mim...
+    </div>
+    <script>
+        var a = window.document.getElementById("area")
+        a.addEventListener ('click', clicar)
+        a.addEventListener ('mouseenter', entrou)
+        a.addEventListener ('mouseout', saiu)
+        function clicar () {  
+            a.innerText = 'você clicou...'
+            a.style.backgroundColor = 'red'
+        }
+        function entrou() {
+            a.innerText = 'entrou!'
+        }
+        function saiu () {
+            a.innerText = 'saiu!'
+            a.style.backgroundColor = 'rgb(114, 204, 152)'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BR ou humano?</title>
+</head>
+<body>
+    <h1>Descubra agora se vc é ser humano ou não :D</h1>
+   Digite seu nome: <input type="text" name="txtnome" id="txtnome">
+    Digite seu país: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="resultado" onclick="calcular()">
+    <div id="res">Resultado</div>
+    <script>
+        let nome = window.document.getElementById ('txtnome');
+        let pais = window.document.getElementById ('txtpais');
+        let resultado = window.document.getElementById ('res');
+    
+       
+            function calcular() {
+                
+                if (pais.value.toUpperCase().trim() == 'BRASIL') {
+                    resultado.innerHTML = `${nome.value}, infelizmente você não é humano é brasileiro`
+                } else {
+                    resultado.innerHTML = `Parabéns, ${nome.value}!! Você é ser humano`
+                }
+            }
+            
+// Para acessar o valor do input é preciso usar o .value
+    </script>
+</body>
+</html>

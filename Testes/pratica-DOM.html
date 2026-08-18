@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica-DOM</title>
+    <style>
+        div#botao {
+            background-color:rgb(60, 144, 222) ;
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+            text-align: center;
+        }
+        body {
+           background-color: rgb(11, 195, 149); 
+        }
+    </style>
+</head>
+<body>
+    <div id="botao">sou um botão:)</div>
+    <script>
+        var a = window.document.querySelector ('div#botao')
+        var clicou = false
+        a.addEventListener ('click', clicar)
+        a.addEventListener ('mouseout', saiu)
+        a.addEventListener ('mouseenter', entrou)
+        function entrou() {
+            a.innerHTML = 'Tira o mouse de cima de mim......😣'
+        }
+        function clicar () {
+            clicou = true
+            a.innerHTML = 'Você clicou em mim?!??! 🥺'
+        }
+        function saiu () {
+            if (clicou == true) {
+                 a.innerHTML = 'Não clica dinovo... 👉👈 '
+            } else {
+                a.innerHTML = 'Obrigado por não clicar ☺️'
+            }
+           clicou = false
+        }
+
+        // pode ser escrito só como : if (clicou) no lugar de: if (clicou == true)
+        
+    </script>
+</body>
+</html>

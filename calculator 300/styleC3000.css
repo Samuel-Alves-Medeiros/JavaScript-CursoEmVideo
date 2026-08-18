@@ -1,0 +1,12 @@
+body{
+    background-color:rgb(134, 152, 230);
+
+}
+div#res{
+    background-color: rgba(67, 196, 121, 0.719);
+    text-align: center;
+
+}
+section {
+    margin: auto;
+}
