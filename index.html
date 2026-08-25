@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let lista = [];
+        let resposta = prompt('Digita o que tú quer e - se não quiser nada');
+
+        while (resposta != '-') {
+            lista.push(resposta);
+            resposta = prompt('Digita o que tú quer e - se não quiser nada');
+            
+        }
+        if (lista.length == 0){
+            alert('Você não vai comprar nada?! E ta passando fome é?');
+        }
+        else{
+            alert('Suas compras são:');
+            for (let i= 0; i < lista.length;) {
+                alert(lista[i]);
+                i++;
+            }
+        }
+       
+    </script>
+</body>
+</html>

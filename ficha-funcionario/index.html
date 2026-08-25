@@ -1,23 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ficha de funcionário</title>
+    <title>Employee record</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Employee record</h1>
-    Name:<input type="text" name="userNameTxt" id="userNameTxt"><br>
-    Age:<input type="number" name="userAgeTxt" id="userAgeTxt"> <br>
-    Country: <input type="text" name="userCountryTxt" id="userCountryTxt"><br>
-    Position:<input type="text" name="userPositionTxt" id="userPositionTxt"><br>
-    <input type="button" value="Generate record" id="generateRecord">
-    <section>
-         
-        <div id="resultId">Result</div>
+    <header>
+        <h1>Employee record</h1>
+    </header>
+    <main>
+        <form action="/" method="POST">
+            <fieldset>
+            <legend>Put your informations on it, just  trust-me</legend>
+            <div>
+                <label for="user-name">Name:</label>
+                <input type="text" name="name" id="user-name">
+            </div>
+            <div>
+                <label for="user-birth-date">Date of Birth:</label>
+                <input type="date" name="birth" id="user-birth-date">
+            </div>
+            <div>
+                <label for="user-country">Country:</label>
+                <input type="text" name="country" id="user-country"><br>
+            </div>
+            <div>
+                <label for="user-position">Positon:</label>
+                <select name="position" id="user-position">
+                    <option value="trainee">Trainee</option>
+                    <option value="developer">Developer</option>
+                    <option value="designer">Designer</option>
+                    <option value="manager">Manager</option>
+                </select>
+            </div>
+            <br>
+            <input type="button" value="Generate record" id="generateRecord">
+            
+        </fieldset>
+        <br>
+        <fieldset>
+            <div id="resultId">Result</div>
+        </fieldset>
+        </form>
+        
+    </main>
     
-    </section>
+    
 
     <script src="script.js"></script>
 </body>
