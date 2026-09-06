@@ -14,7 +14,7 @@ section {
     padding:  15px;
     width: 500px;
     margin: auto;
-    text-align: center;
+    
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.326);
 }
 
@@ -22,5 +22,13 @@ footer {
     color: white;
     text-align: center;
     font-style: italic;
+}
+
+#res{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 

@@ -5,6 +5,7 @@ body{
 div#res{
     background-color: rgba(67, 196, 121, 0.719);
     text-align: center;
+    padding: 2rem;
 
 }
 section {
