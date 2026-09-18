@@ -1,3 +1,5 @@
+import(String)
+
 let buton = window.document.getElementById ('bt');
 buton.addEventListener ('click', clicar);
 let sub = window.document.getElementById('sub');
@@ -28,6 +30,7 @@ let operacaoEscolhida;
         let n2 = Number(txn2.value );
         let s;
         let nomeOperacao;
+        
         if (operacaoEscolhida === '+') {
             s = n1 + n2
             nomeOperacao = 'soma'

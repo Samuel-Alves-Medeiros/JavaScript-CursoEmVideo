@@ -29,10 +29,21 @@
 
 
 
-let c = 1
+// let c = 1
 
-do{                                     // =>> estrutura de repetição com teste lógico no final
-    console.log('Olá! Tudo bem?')
-    c++
-}while(c <= 6)
+// do{                                     // =>> estrutura de repetição com teste lógico no final
+//     console.log('Olá! Tudo bem?')
+//     c++
+// }while(c <= 6)
 
+
+// for (inicialização; teste lógico; incremento) {bloco de códigos}
+
+
+// O for é usado qundo se sabe o número de Iterações necessárias 
+
+console.log('Vai começar...')
+for (let c = 1; c<=10; c++){
+    console.log(`passo ${c}`)
+}
+console.log('Fim!')
